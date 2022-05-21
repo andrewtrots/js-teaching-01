@@ -1,4 +1,4 @@
-//
+//Конструкція if...else
 const lemonChicken = false;
 const beefWithBlackBean = true;
 const sweetAndSourPork = true;
@@ -13,6 +13,7 @@ if (lemonChicken) {
   console.log('Fine, rice with egg confirm');
 }
 
+
 const name = 'Andrew';
 
 if (name === 'Andrew') {
@@ -25,6 +26,8 @@ if (name === 'Andrew') {
   console.log('Hi stranger');
 }
 
+
+//Цикл while
 let sheepCounted = 0;
 while (sheepCounted < 10) {
   console.log('Sheep counted: ' + sheepCounted + '!');
@@ -32,6 +35,8 @@ while (sheepCounted < 10) {
 }
 console.log('Hrrrrrr-psssssss');
 
+
+//Цикл for
 for (let sheepCount = 0; sheepCount < 10; sheepCount++) {
   console.log('Sheep is ' + sheepCount + '!');
 }
@@ -58,6 +63,8 @@ while (x < 10000) {
   x = x * 3;
 }
 
+
+// Функції!!!
 const ourFirstFunction = function () {
   console.log('Hello World');
 };
@@ -70,6 +77,8 @@ const sayHelloTo = function (name) {
 sayHelloTo('Andrew');
 sayHelloTo('Svitlana');
 
+
+// 1 аргумент
 const drawCats = function (howManyTimes) {
   for (let i = 0; i < howManyTimes; i++) {
     console.log(i + ' =^-^=');
@@ -77,6 +86,8 @@ const drawCats = function (howManyTimes) {
 };
 drawCats(10);
 
+
+//2 аргументи
 const printMultipleTimes = function (howManyTimes, whatToDraw) {
   for (let i = 0; i < howManyTimes; i++) {
     console.log(i + '' + whatToDraw);
