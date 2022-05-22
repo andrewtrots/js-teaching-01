@@ -13,7 +13,6 @@ if (lemonChicken) {
   console.log('Fine, rice with egg confirm');
 }
 
-
 const name = 'Andrew';
 
 if (name === 'Andrew') {
@@ -26,7 +25,6 @@ if (name === 'Andrew') {
   console.log('Hi stranger');
 }
 
-
 //Цикл while
 let sheepCounted = 0;
 while (sheepCounted < 10) {
@@ -34,7 +32,6 @@ while (sheepCounted < 10) {
   sheepCounted++;
 }
 console.log('Hrrrrrr-psssssss');
-
 
 //Цикл for
 for (let sheepCount = 0; sheepCount < 10; sheepCount++) {
@@ -63,7 +60,6 @@ while (x < 10000) {
   x = x * 3;
 }
 
-
 // Функції!!!
 const ourFirstFunction = function () {
   console.log('Hello World');
@@ -77,7 +73,6 @@ const sayHelloTo = function (name) {
 sayHelloTo('Andrew');
 sayHelloTo('Svitlana');
 
-
 // 1 аргумент
 const drawCats = function (howManyTimes) {
   for (let i = 0; i < howManyTimes; i++) {
@@ -85,7 +80,6 @@ const drawCats = function (howManyTimes) {
   }
 };
 drawCats(10);
-
 
 //2 аргументи
 const printMultipleTimes = function (howManyTimes, whatToDraw) {
@@ -177,7 +171,100 @@ const double = function (number) {
   return number * 2;
 };
 
-//Коротка версія функціїї
+//Коротка версія функції
 function double(number) {
   return number * 2;
 }
+
+//SoftServe Education!!!!!!!!!!
+// for цикл з лічильником
+for (let i = 0; i < 100; i++) {
+  console.log(i);
+}
+
+for (let i = 100; i > 0; i--) {
+  console.log(i);
+}
+
+for (let i = 100; i > 100; i -= 2) {
+  //i = i - 2
+  console.log(i);
+}
+
+for (let i = 100; i > 0; i--) {
+  if (i % 2 === 0) {
+    console.log(i);
+  }
+}
+
+// while цикл з передумовою
+let i = 0;
+while (i < 100) {
+  console.log(i);
+  i++;
+}
+
+let num = parseFloat(prompt('Enter a number!'));
+while (Number.isNaN(num)) {
+  num = parseFloat(prompt('Enter a number!'));
+}
+alert(num);
+
+//do -while Цикл з постумовою
+let num;
+do {
+  num = parseFloat(prompt('Enter a number!'));
+} while (Number.isNaN(num));
+alert(num);
+
+//Arrays
+let products = [];
+products[0] = 'Nissan';
+products[1] = 'Audi';
+products[2] = 'Lexus';
+products.push('Renault');
+console.log(products[1]);
+console.log(products.length);
+console.log(products);
+
+products.reverse();
+
+for (i = 0; i < products.length; i++) {
+  console.log(products[i]);
+}
+
+for (i = products.length - 1; i >= 0; i--) {
+  console.log(products[i]);
+}
+
+//Виводим масив без undefined
+products.forEach(printElement);
+function printElement(el) {
+  console.log(el);
+}
+
+//Крок 1 - Переносимо функцію в аргумент forEach
+products.forEach(function printElement(el) {
+  console.log(el);
+});
+
+//Крок 2 - видаляю ім'я (анонімна функція)
+products.forEach(function (el) {
+  console.log(el);
+});
+
+//Крок 3 - роблю стрілочну функцію
+products.forEach(el => {
+  console.log(el);
+});
+
+// Крок 4 - спрощую написання стрілочної функції
+products.forEach(el => console.log(el));
+
+products.sort();
+
+//Сортування чисел
+const nums = [1, 10, 22, 30, 400, 200, 11, 32, 50];
+//компаратор - стрілочна функція для правильного сортування
+nums.sort((a, b) => b - a);
+console.log(nums);
